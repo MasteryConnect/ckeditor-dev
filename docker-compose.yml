@@ -9,4 +9,14 @@ services:
     volumes:
       - .:/src
 
+  build:
+    build: .
+    image: localckeditor:latest
+    command: bash ./dev/builder/build.sh
+    working_dir: /src
+    environment:
+      TERM: xterm-256color
+    volumes:
+      - .:/src
+
 
