@@ -8,6 +8,10 @@
 var CKBUILDER_CONFIG = {
 	skin: 'moono-lisa',
 	ignore: [
+		'.github',
+		'LICENSE.md',
+		'CHANGES.md',
+		'samples',
 		'bender.js',
 		'bender.ci.js',
 		'.bender',
@@ -30,7 +34,10 @@ var CKBUILDER_CONFIG = {
 		'node_modules',
 		'package.json',
 		'README.md',
-		'tests'
+		'tests',
+    '.dockerignore',
+    'Dockerfile',
+    'docker-compose.yml'
 	],
 	plugins: {
 		a11yhelp: 1,

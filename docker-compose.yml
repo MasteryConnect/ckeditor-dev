@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  cke:
+    build: .
+    image: localckeditor:latest
+    environment:
+      TERM: xterm-256color
+    volumes:
+      - .:/src
+
+
